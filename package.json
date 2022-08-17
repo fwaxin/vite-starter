@@ -1,7 +1,7 @@
 {
   "name": "vite-starter",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.0-developement",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -22,5 +22,13 @@
     "prettier": "^2.7.1",
     "typescript": "^4.7.4",
     "vite": "^3.0.7"
+  },
+  "release": {
+    "branches": ["main"],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github"
+    ]
   }
 }
